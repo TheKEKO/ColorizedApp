@@ -51,10 +51,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func SliderAction() {
+        changeColor()
         redLabel.text = String(round(redSlider.value * 100) / 100)
         blueLabel.text = String(round(blueSlider.value * 100) / 100)
         greenLabel.text = String(round(greenSlider.value * 100) / 100)
-        changeColor()
     }
 }
 
